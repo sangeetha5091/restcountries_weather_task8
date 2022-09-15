@@ -33,7 +33,7 @@ function displayData(data) {
            <p class="card-text">Capital: ${items.capital}</p>
            <p class="card-text">Region: ${items.continents}</p>
            <p class="card-text">Country Code: ${items.cca3}</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getweatherData(${items.latlng[0]},${items.latlng[1]})">  Click the Weather  </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getweatherData(${items.latlng[0]},${items.latlng[1]})">  Click For Weather  </button>
          </div>
        </div>  
 `;
