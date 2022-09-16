@@ -62,26 +62,3 @@ async function getweatherData(latlng0, latlng1) {
   document.querySelector(".modal-body").append(weather_div);
 }
 
-// loader script
-const loader_div = document.createElement("div");
-loader_div.setAttribute("class", "loader");
-const loader_image = document.createElement("img");
-loader_image.setAttribute(
-  "src",
-  "https://liveweather.netlify.app/static/media/loader.865b985d.gif"
-);
-loader_div.append(loader_image);
-document.querySelector(".page_loader").append(loader_div);
-
-const loader = document.querySelector(".loader");
-const main = document.querySelector(".main");
-
-function init() {
-  setTimeout(() => {
-    loader.style.opacity = 0;
-    loader.style.display = "none";
-    main.style.display = "block";
-    setTimeout(() => (main.style.opacity = 1), 50);
-  }, 8000);
-}
-init();
