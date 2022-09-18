@@ -46,7 +46,7 @@ async function getweatherData(latlng0, latlng1) {
   console.log("getweatherData", latlng0, latlng1);
   document.querySelector(".modal-body").innerHTML = "";
   const res = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${latlng0}&lon=${latlng1}&appid=d581e380961b09df78fcc9b56b3c8913&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${latlng0}&lon=${latlng1}&appid&units=metric`
   );
   const data = await res.json();
   console.log(data);
